@@ -4,8 +4,8 @@
     --darkest: #0c2a41;
     --gray: #94d2bd;
     --light: #e9d8a6;
-    --pink: #ee9b00;
-    --purple: #ca6702;
+    --yellow: #ee9b00;
+    --brown: #ca6702;
 }
 
 *{
@@ -73,7 +73,7 @@ input, button{
     font-size: 1.25rem;
     color: var(--pink);
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--yellow), var(--brown));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -126,7 +126,7 @@ main{
 }
 
 #tasks .task .content .text:not(:read-only){
-    color: var(--pink)
+    color: var(--yellow)
 }
 
 #tasks .task .actions{
@@ -151,7 +151,7 @@ main{
 }
 
 #tasks .actions .edit{
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--yellow), var(--brown));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

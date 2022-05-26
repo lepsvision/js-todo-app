@@ -3,15 +3,8 @@ window.addEventListener('load', () => {
     const input = document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
 
-    const noTasks = document.createElement("h3");
-    noTasks.classList.add("noTasks");
-    noTasks.innerHTML = "Wanna add some tasks?";
-    list_el.appendChild(noTasks);
-
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-
-        list_el.removeChild(noTasks);
 
         const task = input.value;
 
