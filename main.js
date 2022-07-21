@@ -3,14 +3,16 @@ window.addEventListener('load', () => {
     const input = document.querySelector("#new-task-input");
     const list_el = document.querySelector("#tasks");
 
+    let todos = JSON.parse(localStorage.getItem('todos') || "[]");
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
         const task = input.value;
 
-        if(!task){
-            alert('Please, write smth!');
-            return;   
+        if(task) {
+            todos.push(task);
+            localStorage.setItem('todos', JSON.stringify(todos));   
         }
 
         const task_el = document.createElement("div");
